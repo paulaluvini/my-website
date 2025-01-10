@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Garamond', serif;
     background-color: #978597;
     color: #fff;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .text-section h1 {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 32px;
     margin: 10px 0;
 }
@@ -121,7 +121,7 @@ body {
 #about-me h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 #about-me p {
@@ -156,7 +156,7 @@ body {
 
 #education h2 {
     font-size: 36px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     color: #5e3e5c;
 }
@@ -184,26 +184,44 @@ body {
     color: #555;
 }
 
+
 /* General Wave Styling */
-.wave {
+
+.wave,
+.wave-upside-down {
+    display: block;
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 120px;
     overflow: hidden;
 }
 
+/* Wave Pointing Down */
 .wave svg {
     position: absolute;
-    top: -5px; /* Adjusts the wave overlap */
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
 }
 
 .wave path {
-    fill: #978597; /* Match the wave color to your design */
+    fill: #978597; /* Adjust color as needed */
 }
 
+/* Wave Pointing Up */
+.wave-upside-down svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(-1); /* Flip vertically */
+}
+
+.wave-upside-down path {
+    fill: #F3EBF3; /* Adjust color as needed */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -248,7 +266,7 @@ body {
 
 #publications h2 {
     font-size: 36px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     color: #5e3e5c;
 }
@@ -299,34 +317,36 @@ body {
 #dissemination {
     background-color: #F3EBF3;
     color: #333;
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 #dissemination .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #dissemination .section-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
 #dissemination h2 {
     font-size: 36px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .subsection h3 {
     font-size: 28px;
-    margin-top: 30px;
-    font-family: 'Futura', sans-serif;
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: left;
-    margin-bottom: 15px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 .media-list, .event-list {
@@ -360,10 +380,87 @@ body {
 }
 
 
+/* Coding Section */
+#code {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#code .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#code .section-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#code h2 {
+    font-size: 36px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    color: #5e3e5c;
+}
+
+.code-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.code-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.code-item h3 {
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    color: #5e3e5c;
+    margin: 0;
+}
+
+.code-item p {
+    font-size: 16px;
+    font-family: 'Garamond', serif;
+    margin: 5px 0;
+    color: #555;
+}
+
+.arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between text and icon */
+    background-color: #978597; /* Button background */
+    color: white; /* Text and icon color */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #978597; /* Hover effect */
+}
+
+.arrow-icon {
+    width: 16px; /* Icon size */
+    height: 16px;
+}
+
+
 /* Contact Section */
 #contact {
     padding: 50px 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 #contact .container {
