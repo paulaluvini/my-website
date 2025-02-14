@@ -1,10 +1,7 @@
 # My personal website
 
 ## Overview
-This repository contains the source code for my personal website, hosted on GitHub Pages with a custom domain purchased from Porkbun.
-
-## Website URL
-[paulaluvini.com]
+This repository contains the source code for my personal website, hosted on GitHub Pages with a custom domain purchased from Porkbun. Please, check how it looks [here](paulaluvini.com).
 
 ## Repository Structure
 ```
